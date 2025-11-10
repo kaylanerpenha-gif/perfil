@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site perfil</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="ímage/png" href="favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Perfil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.svg">
 </head>
 <body>
-  
-    <div class="profile">
-        <img src="foto.png" alt="profile picture">
-        <h1>Kaylane Rocha</h1>
-        <h2>SENAI</h2>
-        <p>Bem vindo! a minha pagina</p>
 
-        <div class="link">
-            <a href="#" class="btn">intagram</a>
-            <a href="#" class="btn">tiktok</a>
-            </div>
-        </div>
+  <div class="profile">
+    <img src="foto.png" alt="Profile Picture">
+    <h1>Kaylane Rocha</h1>
+    <h2>Aluno SENAI</h2>
+    <p>Bem Vindo! a minha pagina!</p>
+
+    <div class="links">
+      <a href="facebook.com" class="btn">Instagram</a>
+      <a href="#" class="btn">TikTok</a>
+      <button class="btn" onclick="mostrarMensagem()">Clique aqui</button>
+      <p id="mensagem"></p>
+      <script>
+        function mostrarMensagem() {
+          document.getElementById("mensagem").innerText = "Olá, você clicou no botão!";
+        }
+      </script>
+    </div>
+  </div>
+
 </body>
 </html>
